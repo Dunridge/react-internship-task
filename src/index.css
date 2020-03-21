@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: white;
+  height: 35px;
 }
 
 .img-website {
@@ -47,6 +48,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* position: absolute; */
   /* background-position: 0px 50px; */
 }
 
@@ -230,5 +232,77 @@
 }
 
 #root > div > div.services > div.services-section > div:nth-child(1) > p {
-  margin-right: 500px;
+  background-color: rgb(128,128,128, 0.6);
+  margin-right: 700px;
+}
+
+#root > div > div.services > div.services-section > div:nth-child(2) > h2 {
+  background-color: rgb(128,128,128, 0.6);
+  margin-left: 650px;
+}
+
+#root > div > div.services > div.services-section > div:nth-child(2) > p {
+  background-color: rgb(128,128,128, 0.6);
+  margin-left: 650px;
+}
+
+/* TODO: make a media screen */
+
+@media only screen and (max-width: 640px) {
+  #root > div > div.nav-info > div.navbar-container {
+    visibility: hidden;
+  }
+  #root > div > div.nav-info > div.carousel-container > div > div:nth-child(1) > h2 {
+    /* margin-top: -5%; */
+    position: absolute;
+    font-size: small;
+    bottom: 125px;
+  }
+  #root > div > div.nav-info > div.carousel-container > div > div:nth-child(2) > h2 {
+    font-size: small;
+    position: absolute;
+    bottom: 75px;
+  }
+
+  #root > div > div.services > div.info-cards {
+    display: inline-block;
+  }
+
+  #root > div > div.nav-info > div.carousel-container > div > div:nth-child(1) > h2 {
+    background-color: rgb(128,128,128, 0.6);
+  }
+
+  #root > div > div.nav-info > div.carousel-container > div > div:nth-child(2) > h2 {
+    background-color: rgb(128,128,128, 0.6);
+  }
+
+  #root > div > div.services > div.info-cards > div:nth-child(2) > div:nth-child(1) {
+    margin-left: -100px;
+  }
+  
+  
+
+}
+
+#root > div > div.nav-info > div.navbar-container > img {
+  margin-left: 2%;
+  width: 3.5%;
+  height: 80%;
+  padding-bottom: 1%;
+}
+
+#root > div > div.nav-info > div.navbar-container {
+  height: 50px;
+}
+
+#root > div > div.nav-info > div.navbar-container > div.navbar-container.buttons > div:nth-child(3) {
+  width: 100%;
+}
+
+#root > div > div.nav-info > div.navbar-container > div.navbar-container.buttons > div:nth-child(4) {
+  width: 350px;
+}
+
+#root > div > div.nav-info > div.navbar-container > div.navbar-container.buttons > div:nth-child(1) {
+  
 }

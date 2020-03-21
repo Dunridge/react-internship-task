@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import CardRow from './components/CardRow';
 import ServicesCard from './components/ServicesCard';
+import {ReactComponent as FacebookLogoSvg } from "./resources/facebook-app-logo.svg";
 
 class App extends React.Component {
     state = {
@@ -27,7 +28,7 @@ class App extends React.Component {
     };
 
     componentDidMount() {
-        // for checking the contents
+        // for checking the content
         console.log(this.state.serviceTitles);
         console.log(this.state.serviceCardInfo);
     }
@@ -90,7 +91,9 @@ class App extends React.Component {
                             <div>Киевская область, 08292</div>
                             <div>ПН - ПТ: 09:00 - 18:00</div>
                             <div>+38(097)123-45-67</div>
-                            <div className="icons">*insert icons*</div>
+                            <div className="icons">
+                            <FacebookLogoSvg/>
+                            </div>
                         </div>
                     </div>
                     <div className="copyright">
